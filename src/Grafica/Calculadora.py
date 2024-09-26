@@ -1,6 +1,6 @@
 import customtkinter as ctk
-
-
+from src.images.image_processing import equal_button, c_button
+font_size = ("Arial", 30)
 class Calculator(ctk.CTk):
     def __init__(self):
         super().__init__()
@@ -34,27 +34,27 @@ class Calculator(ctk.CTk):
             self.entry.insert(ctk.END, numero)
 
         ctk.CTkButton(self, text="1", width=65, height=45, command=lambda: agregar_al_entry(1), fg_color="#404258",
-                      corner_radius=40).place(x=20, y=120)
+                      corner_radius=40, font=font_size).place(x=20, y=120)
         ctk.CTkButton(self, text="2", width=65, height=45, command=lambda: agregar_al_entry(2), fg_color="#404258",
-                      corner_radius=40).place(x=100, y=120)
+                      corner_radius=40, font= font_size).place(x=100, y=120)
         ctk.CTkButton(self, text="3", width=65, height=45, command=lambda: agregar_al_entry(3), fg_color="#404258",
-                      corner_radius=40).place(x=180, y=120)
+                      corner_radius=40, font= font_size).place(x=180, y=120)
         ctk.CTkButton(self, text="4", width=65, height=45, command=lambda: agregar_al_entry(4), fg_color="#404258",
-                      corner_radius=40).place(x=20, y=180)
+                      corner_radius=40, font= font_size).place(x=20, y=180)
         ctk.CTkButton(self, text="5", width=65, height=45, command=lambda: agregar_al_entry(5), fg_color="#404258",
-                      corner_radius=40).place(x=100, y=180)
+                      corner_radius=40, font= font_size).place(x=100, y=180)
         ctk.CTkButton(self, text="6", width=65, height=45, command=lambda: agregar_al_entry(6), fg_color="#404258",
-                      corner_radius=40).place(x=180, y=180)
+                      corner_radius=40, font= font_size).place(x=180, y=180)
         ctk.CTkButton(self, text="7", width=65, height=45, command=lambda: agregar_al_entry(7), fg_color="#404258",
-                      corner_radius=40).place(x=20, y=240)
+                      corner_radius=40, font= font_size).place(x=20, y=240)
         ctk.CTkButton(self, text="8", width=65, height=45, command=lambda: agregar_al_entry(8), fg_color="#404258",
-                      corner_radius=40).place(x=100, y=240)
+                      corner_radius=40, font= font_size).place(x=100, y=240)
         ctk.CTkButton(self, text="9", width=65, height=45, command=lambda: agregar_al_entry(9), fg_color="#404258",
-                      corner_radius=40).place(x=180, y=240)
+                      corner_radius=40, font= font_size).place(x=180, y=240)
         ctk.CTkButton(self, text="0", width=65, height=45, command=lambda: agregar_al_entry(0), fg_color="#404258",
-                      corner_radius=40).place(x=55, y=300)
+                      corner_radius=40, font= font_size).place(x=55, y=300)
         ctk.CTkButton(self, text=".", width=65, height=45, command=lambda: agregar_al_entry("."), fg_color="#404258",
-                      corner_radius=40).place(x=145, y=300)
+                      corner_radius=40, font= font_size).place(x=145, y=300)
 
     def configuracion_botones_operadores(self):
 
@@ -67,14 +67,15 @@ class Calculator(ctk.CTk):
             operator_length = len(option)  # Para soportar operaciones mas largas, que necesitan mas de una  letra.
             self.entry.insert(ctk.END, option)
 
-        ctk.CTkButton(master=self, text="+", width=45, height=45, command=lambda: obtener_operacion("+"),
-                      fg_color="#F49D1A", corner_radius=400).place(x=280, y=180)
-        ctk.CTkButton(self, text="-", width=45, height=45, command=lambda: obtener_operacion("-"), fg_color="#F49D1A",
-                      corner_radius=400).place(x=345, y=180)
-        ctk.CTkButton(self, text="*", width=45, height=45, command=lambda: obtener_operacion("*"), fg_color="#F49D1A",
-                      corner_radius=400).place(x=280, y=120)
-        ctk.CTkButton(self, text="/", width=45, height=45, command=lambda: obtener_operacion("/"), fg_color="#F49D1A",
-                      corner_radius=400).place(x=345, y=120)
+        ctk.CTkButton(master=self, text="+", width=45,height=45, command=lambda: obtener_operacion("+"),
+                      fg_color="#F49D1A", corner_radius=18, font=('Arial',27), compound="left").place(x=280, y=180)
+
+        ctk.CTkButton(self, text="-", width=52, height=45, command=lambda: obtener_operacion("-"), fg_color="#F49D1A",
+                      corner_radius=18, font=("Arial", 30)).place(x=345, y=180)
+        ctk.CTkButton(self, text="×", width=45, height=45, command=lambda: obtener_operacion("*"), fg_color="#F49D1A",
+                      corner_radius=18,font=('Arial',27)).place(x=280, y=120)
+        ctk.CTkButton(self, text="÷", width=45, height=45, command=lambda: obtener_operacion("/"), fg_color="#F49D1A",
+                      corner_radius=18, font=('Arial',27)).place(x=345, y=120)
 
     def configuracion_botones_especiales(self):
         def borrar_todo():
@@ -114,9 +115,9 @@ class Calculator(ctk.CTk):
                 borrar_todo()
                 self.entry.insert(0, 'Error En EL Calculo')
 
-        ctk.CTkButton(self, text="=", width=125, height=46, command=lambda: calcular(), fg_color="#B2B2B2",
+        ctk.CTkButton(self, text="", image=equal_button, width=125, height=46, command=lambda: calcular(), fg_color="#B2B2B2",
                       corner_radius=60).place(x=277, y=300)
-        ctk.CTkButton(self, text="AC", width=45, height=45, command=lambda: borrar_todo(), fg_color="#5FB25F",
-                      corner_radius=60).place(x=345, y=240)
-        ctk.CTkButton(self, text="C", width=45, height=45, command=lambda: borrar_caracter(), fg_color="#5FB25F",
-                      corner_radius=60).place(x=280, y=240)
+        ctk.CTkButton(self, text="AC", width=41, height=37, command=lambda: borrar_todo(), fg_color="#5FB25F",
+                      corner_radius=10, font=("Arial", 21)).place(x=345, y=240)
+        ctk.CTkButton(self, text="", image=c_button, width=20, height=25, command=lambda: borrar_caracter(), fg_color="#5FB25F",
+                      corner_radius=10).place(x=282, y=240)

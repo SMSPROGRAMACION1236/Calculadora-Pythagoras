@@ -117,7 +117,7 @@ class Calculator(ctk.CTk):
                 borrar_todo()
                 self.entry.insert(0, 'Error En EL Calculo')
 
-        ctk.CTkButton(self, text="", image=equal_button, width=125, height=46, command=lambda: calcular(), fg_color="#B2B2B2",
+        ctk.CTkButton(self, text="",image=equal_button, width=125, height=46, command=lambda: calcular(), fg_color="#B2B2B2",
                       corner_radius=60).place(x=277, y=300)
         ctk.CTkButton(self, text="AC", width=41, height=37, command=lambda: borrar_todo(), fg_color="#5FB25F",
                       corner_radius=10, font=("Arial", 21)).place(x=345, y=240)

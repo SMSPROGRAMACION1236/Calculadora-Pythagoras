@@ -1,7 +1,14 @@
 import customtkinter as ctk
-from src.images.image_processing import equal_button, c_button
-
+#from src.images.image_processing import equal_button, c_button
+from images.image_processing import equal_button, c_button
 font_size = ("Arial", 30)
+import os
+base_path = os.path.dirname(os.path.abspath(__file__))
+def create_path(file):
+    return os.path.join(base_path, file)
+calculator_ico = create_path("calculator.ico")
+print(calculator_ico)
+
 class Calculator(ctk.CTk):
     def __init__(self):
         super().__init__()
@@ -14,7 +21,7 @@ class Calculator(ctk.CTk):
     def configuracion_inicial(self):
         self.title("Calculadora Pythagoras")
         self.geometry("410x367")
-        self.iconbitmap(r"C:\Users\santi\Programación\Proyectos\Calculadora-Pythagoras\src\images\calculator.ico")
+        self.iconbitmap(fr"{calculator_ico}")
         self.configure(fg_color="#242530")
         self.resizable(False, False)
 

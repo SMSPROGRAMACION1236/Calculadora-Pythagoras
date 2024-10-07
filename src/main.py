@@ -1,4 +1,6 @@
-from src.Grafica.Calculadora import Calculator
+from Grafica.Calculadora import Calculator
 
-app = Calculator()
-app.mainloop()
+
+if __name__ == "__main__":
+    app = Calculator()
+    app.mainloop()

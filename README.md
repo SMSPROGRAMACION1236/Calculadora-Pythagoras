@@ -1,62 +1,146 @@
-# Nombre del Proyecto
+# 🧮 Calculadora Pythagora
 
-Breve descripción del proyecto y su propósito.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![CustomTkinter](https://img.shields.io/badge/CustomTkinter-FF6F00?style=for-the-badge&logo=tkinter&logoColor=white)
 
-## Características
+Calculadora Pythagora es una calculadora gráfica moderna desarrollada en Python utilizando la librería CustomTkinter. Ofrece una interfaz de usuario atractiva y funcionalidades de cálculo básicas pero potentes.
 
-- Característica principal 1
-- Característica principal 2
-- Característica principal 3
 
-## Descarga e Instalación
+
+![image alt](https://github.com/SMSPROGRAMACION1236/Calculadora-Pythagoras/blob/e42d9871955d941e97f835f9052794e34e827382/resources/calculator.png?raw=True)
+
+## ✨ Características
+
+- **Operaciones básicas:**
+  - ➕ Suma
+  - ➖ Resta
+  - ✖️ Multiplicación
+  - ➗ División
+- 🔢 Soporte para operaciones largas y complejas
+- 🎨 Diseño moderno e intuitivo
+🐍 Instalación de Python
+
+Antes de ejecutar la Calculadora Pythagora desde el código fuente, necesitarás tener Python instalado en tu sistema. Sigue estas instrucciones para instalar Python en tu sistema operativo:
+
+### Windows
+
+Para descargar Python en windows debes ir al la [web oficial](https://www.python.org/downloads/) de python y descargar un archivo ejecutable.
+
+![image alt](https://github.com/SMSPROGRAMACION1236/Calculadora-Pythagoras/blob/e42d9871955d941e97f835f9052794e34e827382/resources/pytho_init.png?raw=True)
+
+
+
+- Descarga la última versión de Python para Windows (64-bit).
+
+- Ejecuta el instalador descargado.
+- En la primera pantalla del instalador, asegúrate de marcar la casilla "Add Python X.X to PATH" (donde X.X es la versión de Python).
+
+- Haz clic en "Install Now".
+- Una vez finalizada la instalación, abre el Command Prompt y escribe 
+ ```bash
+   python --version # para verificar si se instalo correctamente
+   ```
+
+
+### macOS
+
+= La mayoría de las versiones de macOS ya vienen con Python preinstalado.
+-  Para verificar, abre Terminal  y escribe
+ ```bash
+   python3 --version # para verificar si se instalo correctamente
+   ```
+
+- Si no tienes Python instalado o quieres la última versión, visita la página oficial de descargas de Python.
+- Descarga la última versión para macOS.
+-Ejecuta el instalador y sigue las instrucciones en pantalla.
+- Después de la instalación, abre Terminal y verifica la instalación con 
+ ```bash
+   python3 --version # para verificar si se instalo correctamente
+   ```
+
+### Linux (Ubuntu/Debian)
+La mayoría de las distribuciones Linux vienen con Python preinstalado. Sin embargo, para asegurarte de tener la última versión:
+
+- Abre Terminal.
+- Actualiza tu lista de paquetes:
+ ```bash
+   Copysudo apt update
+   ```
+
+
+
+- Instala Python:
+- Copysudo apt install python3
+
+- Verifica la instalación:
+```bash
+ Copypython3 --version
+```
+Deberías ver la versión de Python instalada. Asegúrate de que sea 3.7 o superior.
+
+## 🚀 Instalación
 
 ### Opción 1: Descarga del Ejecutable
 
-1. Ve a la sección de [Releases](https://github.com/usuario/proyecto/releases) de este repositorio.
-2. Descarga el archivo ejecutable más reciente para tu sistema operativo (Windows, macOS, Linux).
-3. Sigue las instrucciones específicas de tu sistema operativo para instalar y ejecutar el programa.
+1. Visita la sección de [Releases](https://github.com/SMSPROGRAMACION1236/Calculadora-Pythagoras/releases/) del repositorio.
+2. Descarga el archivo ejecutable más reciente para Windows.
+3. Ejecuta el instalador y sigue las instrucciones en pantalla.
 
-### Opción 2: Instalación desde el Código Fuente
+### Opción 2: Ejecución desde el Código Fuente
 
-Si prefieres instalar desde el código fuente:
+Si prefieres ejecutar desde el código fuente:
 
-```bash
-git clone https://github.com/usuario/proyecto.git
-cd proyecto
-npm install
-npm run build
-```
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/SMSPROGRAMACION1236/Calculadora-Pythagoras.git
+   cd Calculadora-Pythagoras
+   ```
 
-## Uso
+2. Instala las dependencias:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### Usando el Ejecutable
+3. Ejecuta la aplicación:
+   ```bash
+   python src/main.py
+   ```
 
-1. Haz doble clic en el ejecutable o ejecútalo desde la línea de comandos.
-2. [Incluye aquí instrucciones específicas sobre cómo usar tu programa]
+## 📊 Uso
 
-### Usando desde el Código Fuente
+1. Inicia la aplicación haciendo doble clic en el ejecutable o ejecutando `main.py`.
+2. Utiliza los botones numéricos y de operaciones para realizar tus cálculos.
+3. Presiona '=' para obtener el resultado.
+4. Usa 'C' para borrar la entrada actual y 'AC' para reiniciar completamente.
 
-```bash
-npm start
-```
+## 🛠️ Solución de Problemas
 
-[Incluye aquí ejemplos de uso]
+- **La aplicación no inicia:**
+  Asegúrate de tener Python 3.7+ instalado y todas las dependencias correctamente instaladas.
 
-## Solución de Problemas
+- **Errores de cálculo:**
+  Verifica que estés ingresando las operaciones correctamente. La calculadora sigue el orden estándar de operaciones.
 
-- Problema común 1: [Solución]
-- Problema común 2: [Solución]
+## 🤝 Contribución
 
-## Contribución
+¡Las contribuciones son bienvenidas! Si deseas contribuir:
 
-Explica cómo otros desarrolladores pueden contribuir a tu proyecto.
+1. Haz un fork del proyecto
+2. Crea tu rama de características (`git checkout -b feature/AmazingFeature`)
+3. Realiza tus cambios y haz commit (`git commit -m 'Add some AmazingFeature'`)
+4. Haz push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
-## Licencia
+## 📄 Licencia
 
-Indica la licencia bajo la cual se distribuye tu proyecto.
+Distribuido bajo la Licencia MIT. Ver `LICENSE` para más información.
 
-## Contacto
+## 📞 Contacto
 
-Tu nombre - [@tu_twitter](https://twitter.com/tu_twitter) - email@ejemplo.com
+Tu Nombre - [@tu_twitter](https://twitter.com/tu_twitter) - santiagodavidsanabriavarela@gmail.com
 
-Enlace del proyecto: [https://github.com/tu_usuario/tu_proyecto](https://github.com/tu_usuario/tu_proyecto)
+Enlace del proyecto: [https://github.com/SMSPROGRAMACION1236/Calculadora-Pythagoras](https://github.com/SMSPROGRAMACION1236/Calculadora-Pythagoras)
+
+---
+
+Desarrollado con ❤️ por [Santiago]

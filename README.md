@@ -26,7 +26,7 @@ Antes de ejecutar la Calculadora Pythagora desde el código fuente, necesitarás
 
 Para descargar Python en windows debes ir al la [web oficial](https://www.python.org/downloads/) de python y descargar un archivo ejecutable.
 
-![image alt](https://github.com/SMSPROGRAMACION1236/Calculadora-Pythagoras/blob/e42d9871955d941e97f835f9052794e34e827382/resources/pytho_init.png?raw=True)
+![image alt](https://github.com/SMSPROGRAMACION1236/Calculadora-Pythagoras/blob/68c970f912252946d2316ce5d0fd3531417ea298/resources/python_init.png?raw=True)
 
 
 

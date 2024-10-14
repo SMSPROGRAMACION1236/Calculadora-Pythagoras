@@ -85,10 +85,16 @@ Deberías ver la versión de Python instalada. Asegúrate de que sea 3.7 o super
 1. Visita la sección de [Releases](https://github.com/SMSPROGRAMACION1236/Calculadora-Pythagoras/releases/) del repositorio.
 2. Descarga el archivo ejecutable más reciente para Windows.
 3. Ejecuta el instalador y sigue las instrucciones en pantalla.
+#### A tener en cuenta:
+- Si descargas directamente el ejecutable, no es necesario que tengas python o sus librerias instaladas
+- Respecto a la dependencia de los otros ficheros o directorios, segun mis pruebas no dependen de otras carpetas o ficheros del proyecto, sim embargo si tienes problemas de este tipo, te aconsejo clonar el proyecto proyecto y luego descargar el ejecutable.
+
 
 ### Opción 2: Ejecución desde el Código Fuente
 
 Si prefieres ejecutar desde el código fuente:
+#### Aclaracion
+Antes debes tener python instalado, si es posible en las versiones mas recientes.
 
 1. Clona el repositorio:
    ```bash
@@ -137,10 +143,12 @@ Distribuido bajo la Licencia MIT. Ver `LICENSE` para más información.
 
 ## 📞 Contacto
 
-Tu Nombre - [@tu_twitter](https://twitter.com/tu_twitter) - santiagodavidsanabriavarela@gmail.com
+ - [@mi_twitter](https://x.com/SMSPROGRAMACION) 
+ - Mi_correo:  santiagodavidsanabriavarela@gmail.com
 
 Enlace del proyecto: [https://github.com/SMSPROGRAMACION1236/Calculadora-Pythagoras](https://github.com/SMSPROGRAMACION1236/Calculadora-Pythagoras)
 
 ---
 
 Desarrollado con ❤️ por [Santiago]
+

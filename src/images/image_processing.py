@@ -10,7 +10,7 @@ def create_path(file):
 
 black_path =create_path('black_equal.png') 
 c_path = create_path('char_delete.png') 
-print(black_path)
+
 # Debería imprimir la ruta correcta sin duplicar 'images'
 
 # Usar la ruta construida para abrir el archivo

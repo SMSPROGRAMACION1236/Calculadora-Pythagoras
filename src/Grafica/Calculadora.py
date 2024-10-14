@@ -7,7 +7,7 @@ base_path = os.path.dirname(os.path.abspath(__file__))
 def create_path(file):
     return os.path.join(base_path, file)
 calculator_ico = create_path("calculator.ico")
-print(calculator_ico)
+
 
 class Calculator(ctk.CTk):
     def __init__(self):

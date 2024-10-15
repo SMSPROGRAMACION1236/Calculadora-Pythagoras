@@ -64,17 +64,17 @@ La mayoría de las distribuciones Linux vienen con Python preinstalado. Sin emba
 - Abre Terminal.
 - Actualiza tu lista de paquetes:
  ```bash
-   Copysudo apt update
+   sudo apt update
    ```
 
 
 
 - Instala Python:
-- Copysudo apt install python3
+- sudo apt install python3
 
 - Verifica la instalación:
 ```bash
- Copypython3 --version
+ python3 --version
 ```
 Deberías ver la versión de Python instalada. Asegúrate de que sea 3.7 o superior.
 
